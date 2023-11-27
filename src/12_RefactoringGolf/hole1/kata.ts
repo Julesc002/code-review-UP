@@ -1,5 +1,6 @@
 /* eslint-disable */
 
+//salut
 export class Game {
   private _lastSymbol = ' ';
   private _board: Board = new Board();
