@@ -1,8 +1,16 @@
-
-const leBonNom = ' ';
 export class Game {
-  private _lastSymbol = leBonNom;
+  private _lastSymbol = ' ';
   private _board: Board = new Board();
+  private readonly PLAYER_O = 'O';
+  private readonly EMPTY_SYMBOL = ' ';
+
+  private readonly FIRST_ROW = 0;
+  private readonly SECOND_ROW = 1;
+  private readonly THIRD_ROW = 2;
+  private readonly FIRST_COLUMN = 0;
+  private readonly SECOND_COLUMN = 1;
+  private readonly THIRD_COLUMN = 2;
+
 
   public Play(symbol: string, x: number, y: number): void {
     this.validateFirstMove(symbol);
