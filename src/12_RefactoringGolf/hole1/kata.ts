@@ -3,7 +3,7 @@ const leBonNom = ' ';
 export class Game {
   private _lastSymbol = leBonNom;
   private _board: Board = new Board();
-
+//salut
   public Play(symbol: string, x: number, y: number): void {
     this.validateFirstMove(symbol);
     this.validatePlayer(symbol);
